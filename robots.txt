@@ -1,0 +1,20 @@
+# hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+Allow: /about-me/
+Allow: /food/
+Allow: /read/
+Allow: /travels/
+
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: http://hectorgao.com/sitemap.xml
+Sitemap: http://hectorgao.com/baidusitemap.xml
