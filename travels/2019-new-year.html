@@ -226,7 +226,7 @@
     </div>
     
       
-        <p class="site-subtitle">终有一天猫狗双全</p>
+        <h1 class="site-subtitle" itemprop="description">终有一天猫狗双全</h1>
       
     
     
@@ -397,11 +397,11 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">新年烧香
+          <h2 class="post-title" itemprop="name headline">新年烧香
 
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -738,6 +738,12 @@
                     
                       
                     
+                      
+                    
+                      
+                    
+                      
+                    
                     <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">标签</span>
                   
@@ -996,26 +1002,19 @@
           if (results.length > 0) {
             var counter = results[0];
             
-            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.time + 1);
             
-              .done(function() {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.time + 1);
-              })
+            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
             
               .fail(function ({ responseJSON }) {
                 console.log(`Failed to save Visitor num, with error message: ${responseJSON.error}`);
               })
           } else {
             
-              Counter('post', '/classes/Counter', JSON.stringify({ title: title, url: url, time: 1 }))
-                .done(function() {
-                  var $element = $(document.getElementById(url));
-                  $element.find('.leancloud-visitors-count').text(1);
-                })
-                .fail(function() {
-                  console.log('Failed to create');
-                });
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! More info at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
             
           }
         })
