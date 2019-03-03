@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: 'Roboto Slab', 'Noto Serif SC', "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Noto Serif SC", "Noto", "Noto Sans CJK SC", "Noto Sans CJK", "Source Han Sans", "Source Han Sans CN", "思源黑体", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, sans-serif;
+  font-family: 'Sarasa Mono', 'Noto Serif SC', "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Noto Serif SC", "Noto", "Noto Sans CJK SC", "Noto Sans CJK", "Source Han Sans", "Source Han Sans CN", "思源黑体", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, sans-serif;
 }
 h1,
 h2,
@@ -1948,7 +1948,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #509162;
+  background: #a7aaff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3262,6 +3262,16 @@ blockquote {
   margin-bottom: 1em;
   padding: 0 1.3em;
 }
+.blockquote-center {
+  position: relative;
+  margin: 40px 0;
+  padding: 0;
+  border-left: none;
+  text-align: center;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #fff;
+}
 body {
   color: #000;
   background: url("/images/background.jpg");
@@ -3326,7 +3336,7 @@ p {
   background-color: #000;
   text-decoration: none;
 }
-.post-body h1,
+.posts-expand .post-body h1,
 h2,
 h3,
 h4,
@@ -3335,4 +3345,20 @@ h6 {
   border-left: 4px solid #9397b2;
   margin-left: -40px;
   padding-left: 36px;
+}
+.posts-expand .post-title {
+  border-left: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+.posts-collapse .post-title {
+  margin-left: 60px;
+  border-left: 0;
+  padding-left: 0;
+}
+.posts-collapse .collection-title h1,
+.posts-collapse .collection-title h2 {
+  margin-left: 20px;
+  border-left: 0;
+  padding-left: 0;
 }
