@@ -142,8 +142,6 @@
 <meta name="twitter:description" content="一些html语法12345678910111213141516171819202122/* 分隔线 *//* 注意事项[6]：在XHTML 中， 必须被正确地关闭，比如  *//* 空行 *//* 注意事项同上 */引用内容blockquote&gt;/* 如果上下间距很小，可以像下面这样写 */引用内容blockquote&gt;p&gt;字体大小和颜色内容font&gt;/* 详细请查看 http://www.w3s">
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="虎皮高大人" type="application/atom+xml">
 
@@ -450,6 +448,10 @@
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
 
   
 
@@ -813,6 +815,35 @@
 
 
   
+  
+  	
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail';
+  guest = guest.split(',').filter(function (item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: false,
+    appId: 'jTx9GVR673TSpye1qjU2d5kx-gzGzoHsz',
+    appKey: 'bgkFWOsYG0ttNPGOLwR117FB',
+    placeholder: '留言 可匿名',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+</script>
+
   
 
 
