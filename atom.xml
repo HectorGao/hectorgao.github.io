@@ -37,6 +37,8 @@
       <category term="饮食人生" scheme="http://hectorgao.com/categories/travels/food/"/>
     
     
+      <category term="美食" scheme="http://hectorgao.com/tags/%E7%BE%8E%E9%A3%9F/"/>
+    
       <category term="汉堡" scheme="http://hectorgao.com/tags/%E6%B1%89%E5%A0%A1/"/>
     
       <category term="辣椒" scheme="http://hectorgao.com/tags/%E8%BE%A3%E6%A4%92/"/>
@@ -44,8 +46,6 @@
       <category term="涮涮辣" scheme="http://hectorgao.com/tags/%E6%B6%AE%E6%B6%AE%E8%BE%A3/"/>
     
       <category term="魔鬼椒" scheme="http://hectorgao.com/tags/%E9%AD%94%E9%AC%BC%E6%A4%92/"/>
-    
-      <category term="美食" scheme="http://hectorgao.com/tags/%E7%BE%8E%E9%A3%9F/"/>
     
   </entry>
   
@@ -97,9 +97,9 @@
       <category term="饮食人生" scheme="http://hectorgao.com/categories/food/"/>
     
     
-      <category term="美食" scheme="http://hectorgao.com/tags/%E7%BE%8E%E9%A3%9F/"/>
-    
       <category term="螃蟹" scheme="http://hectorgao.com/tags/%E8%9E%83%E8%9F%B9/"/>
+    
+      <category term="美食" scheme="http://hectorgao.com/tags/%E7%BE%8E%E9%A3%9F/"/>
     
       <category term="知识" scheme="http://hectorgao.com/tags/%E7%9F%A5%E8%AF%86/"/>
     
